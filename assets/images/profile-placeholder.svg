@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <!-- PLACEHOLDER PORTRAIT: replace with a professional photograph (4:5, about 800×1000, JPG/WebP). -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a4a72"/>
+      <stop offset="1" stop-color="#0d1b2e"/>
+    </linearGradient>
+    <linearGradient id="fig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4d6b92"/>
+      <stop offset="1" stop-color="#22395a"/>
+    </linearGradient>
+    <pattern id="ledger" width="800" height="36" patternUnits="userSpaceOnUse">
+      <path d="M0 35.5h800" stroke="#ffffff" stroke-opacity=".05"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <rect width="800" height="1000" fill="url(#ledger)"/>
+  <circle cx="400" cy="410" r="138" fill="url(#fig)"/>
+  <path d="M150 1000c0-190 112-322 250-322s250 132 250 322Z" fill="url(#fig)"/>
+  <path d="M352 680l48 92 48-92" fill="none" stroke="#c9a96e" stroke-opacity=".55" stroke-width="3"/>
+  <text x="400" y="130" text-anchor="middle" font-family="Georgia, serif" font-size="26" letter-spacing="4" fill="#c9a96e" fill-opacity=".8">PORTRAIT PLACEHOLDER</text>
+</svg>

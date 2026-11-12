@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://example.com/ca/</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://example.com/ca/about.html</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://example.com/ca/firm.html</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://example.com/ca/services.html</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://example.com/ca/contact.html</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://example.com/ca/privacy.html</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://example.com/ca/disclaimer.html</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://example.com/ca/service.html?id=income-tax-returns</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://example.com/ca/service.html?id=gst-registration-returns</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://example.com/ca/service.html?id=statutory-audit</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://example.com/ca/service.html?id=bookkeeping</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://example.com/ca/service.html?id=company-incorporation</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://example.com/ca/service.html?id=business-advisory</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://example.com/ca/service.html?id=tax-planning</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://example.com/ca/service.html?id=gst-advisory</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://example.com/ca/service.html?id=tax-audit</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://example.com/ca/service.html?id=payroll</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://example.com/ca/service.html?id=roc-compliance</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://example.com/ca/service.html?id=tax-notices</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://example.com/ca/service.html?id=tds-compliance</loc><lastmod>2026-11-12</lastmod></url>
+</urlset>

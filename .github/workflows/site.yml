@@ -1,0 +1,144 @@
+# CI + GitHub Pages deployment for the CA website.
+#
+#   Every push / pull request:  validate → browser tests → release check (advisory)
+#   Push to main (or manual):    validate → browser tests → release gate → deploy
+#
+# The release gate BLOCKS deployment unless the content is ready to go live:
+#   - website.draftMode is false
+#   - no sample/placeholder content is left in published sections
+#   - siteUrl + basePath match the GitHub Pages URL
+#   - referenced images exist and the placeholder portrait is replaced
+# See scripts/check-release.mjs for the full list.
+#
+# One-time setup: Settings → Pages → Build and deployment → Source: "GitHub Actions".
+
+name: Site
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-${{ github.ref }}
+  # Never cancel a run on main part-way through a deployment.
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+jobs:
+  validate:
+    name: Validate configuration
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: JavaScript syntax
+        run: |
+          for f in src/data/*.js src/js/*.js src/js/pages/*.js scripts/*.mjs tests/*.mjs; do
+            node --check "$f" || { echo "::error file=$f::Syntax error"; exit 1; }
+          done
+
+      - name: Configuration warnings & SEO generation
+        # Exits non-zero on configuration warnings (duplicate ids, unknown
+        # categories, bad paths...). Generated files are rebuilt at deploy time.
+        run: node scripts/generate-seo.mjs
+
+      - name: Release readiness (advisory on branches and PRs)
+        if: ${{ !(github.event_name == 'push' && github.ref == 'refs/heads/main') && github.event_name != 'workflow_dispatch' }}
+        run: node scripts/check-release.mjs --advisory
+
+  test:
+    name: Browser tests (/ca/ and /)
+    needs: validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Acceptance tests
+        run: npm test
+
+  release-gate:
+    name: Release gate (draft mode off, no sample content)
+    if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') || github.event_name == 'workflow_dispatch' }}
+    needs: validate
+    runs-on: ubuntu-latest
+    outputs:
+      base_url: ${{ steps.pages.outputs.base_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Read GitHub Pages URL
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Release check (blocking)
+        env:
+          EXPECTED_BASE_URL: ${{ steps.pages.outputs.base_url }}
+        run: node scripts/check-release.mjs
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: [validate, test, release-gate]
+    if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') || github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: pages-deploy
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate SEO tags, sitemap, robots.txt and 404 base path
+        run: node scripts/generate-seo.mjs
+
+      - name: Assemble public files
+        # Only the website itself is published, not tests, scripts or docs.
+        run: |
+          mkdir -p _site
+          cp ./*.html sitemap.xml robots.txt _site/
+          cp -r src assets _site/
+          touch _site/.nojekyll
+          echo "Published files:" && find _site -type f | sort
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

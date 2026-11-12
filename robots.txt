@@ -1,0 +1,7 @@
+# Crawlers read robots.txt only from the domain root.
+# If this site lives in a sub-folder (e.g. /ca/), add the Sitemap line
+# below to the robots.txt at your domain root.
+User-agent: *
+Allow: /
+
+Sitemap: https://example.com/ca/sitemap.xml

@@ -1,0 +1,18 @@
+{
+  "name": "ca-website",
+  "private": true,
+  "description": "Static Chartered Accountant profile & firm website. No build step is required; these scripts are optional helpers.",
+  "type": "module",
+  "scripts": {
+    "seo": "node scripts/generate-seo.mjs",
+    "check:release": "node scripts/check-release.mjs",
+    "serve": "python3 -m http.server 8080",
+    "test": "node tests/acceptance.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.65.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
