@@ -1,0 +1,100 @@
+﻿Service ID,Service name,Category ID,Short description,Detailed description (one per line),Who it is for (one per line),Scope of work (one per line),What the client receives (one per line),Enquiry button text,Icon,Display order (number),Show on homepage (yes/no),Show on website (yes/no)
+income-tax-returns,Income Tax Return Filing,taxation,"Preparation and filing of income tax returns for individuals, HUFs, firms and companies.","We prepare and file income tax returns after reviewing income from all sources, available deductions and tax already paid through TDS, TCS or advance tax.
+Before filing, we reconcile your information with Form 26AS and the Annual Information Statement (AIS) to reduce the chance of mismatches and notices later.","Salaried individuals
+Professionals and freelancers
+Business owners
+NRIs with Indian income
+Partnership firms and companies","Collection and review of income and investment documents
+Reconciliation with Form 26AS / AIS / TIS
+Computation of total income and tax liability
+Filing of the return and e-verification support
+Follow-up on refunds and processing intimations","Computation of income
+Filed ITR and acknowledgement
+Summary of tax position for the year",Enquire about ITR filing,receipt,1,yes,yes
+tax-planning,Tax Planning & Advisory,taxation,"Lawful planning of tax affairs, regime selection and advice on specific transactions.","We review your income, investments and expected transactions to help you plan your tax position within the law, including the choice between the old and new tax regimes where relevant.
+For significant transactions such as property sales, ESOPs or business restructuring, we provide a written note on tax implications before you proceed.","Individuals with multiple income sources
+Senior executives with ESOPs
+Business owners","Review of current tax position
+Regime comparison
+Transaction-specific tax analysis
+Advance tax estimation","Written tax planning note
+Advance tax schedule",Discuss tax planning,compass,2,no,yes
+tax-notices,Income Tax Notices & Assessments,taxation,"Responding to notices, scrutiny assessments and appeals before tax authorities.","We examine the notice, identify what is being asked and why, and prepare a documented response within the time allowed.
+Where required, we represent clients in assessment proceedings and assist with appeals.","Individuals and businesses who have received a notice
+Taxpayers under scrutiny assessment","Analysis of the notice
+Preparation of submissions and supporting documents
+Online responses and hearings
+Rectification and appeal assistance","Written response filed with the department
+Status updates through closure",Get help with a notice,file-text,3,yes,yes
+tds-compliance,TDS / TCS Compliance,taxation,"Deduction, deposit and quarterly return filing for TDS and TCS.","We help businesses compute withholding correctly, deposit it on time and file quarterly statements, and handle corrections and defaults.","Businesses and employers
+Firms and companies with withholding obligations","TDS/TCS computation
+Challan payments
+Quarterly returns (24Q, 26Q, 27Q, 27EQ)
+Issue of Form 16 / 16A
+Default resolution","Filed quarterly returns
+TDS certificates",Enquire about TDS compliance,calculator,4,no,yes
+gst-registration-returns,GST Registration & Returns,gst,"GST registration, monthly/quarterly returns and annual returns.","We handle GST registration and the full cycle of periodic returns, including reconciliation of input tax credit with GSTR-2B before each filing.
+For annual compliance, we prepare GSTR-9 and, where applicable, the GSTR-9C reconciliation statement.","New and existing businesses
+E-commerce sellers
+Service providers
+Traders and manufacturers","GST registration and amendments
+GSTR-1 and GSTR-3B filing
+ITC reconciliation with GSTR-2B
+Annual return (GSTR-9 / 9C)
+LUT filing for exporters","GST registration certificate
+Filed returns and payment challans
+Monthly reconciliation report",Enquire about GST services,percent,1,yes,yes
+gst-advisory,GST Advisory & Notices,gst,"Classification, place of supply questions, refunds and departmental notices.","We provide written opinions on GST questions and represent clients in responding to notices, audits and refund applications.","Businesses with complex supply chains
+Exporters seeking refunds
+Businesses that have received GST notices","Classification and rate advice
+Refund applications
+Replies to notices and show-cause notices
+Departmental audit support","Written advisory note
+Filed replies and applications",Discuss a GST matter,message,2,no,yes
+statutory-audit,Statutory Audit,audit,"Audit of financial statements under the Companies Act, 2013 and other statutes.","We conduct statutory audits in accordance with the Standards on Auditing issued by ICAI, with a planned approach and clear communication of observations to management.","Private limited companies
+LLPs requiring audit
+Societies and trusts","Audit planning and risk assessment
+Verification of transactions and balances
+Internal control review
+Audit report and CARO reporting","Independent auditor's report
+Management letter with observations",Enquire about statutory audit,shield-check,1,yes,yes
+tax-audit,Tax Audit,audit,Tax audit under Section 44AB and filing of Form 3CA/3CB-3CD.,"For businesses and professionals whose turnover or receipts cross the prescribed limits, we conduct the tax audit and file the report within the due date.",Businesses and professionals above the Section 44AB thresholds,"Review of books and records
+Verification of clauses in Form 3CD
+Filing of the tax audit report",Tax audit report (Form 3CA/3CB and 3CD),Enquire about tax audit,clipboard-check,2,no,yes
+internal-audit,Internal Audit,audit,Process reviews and internal control testing.,Risk-based internal audits for owner-managed businesses.,Growing SMEs,"Process walkthroughs
+Control testing
+Reporting",Internal audit report,Enquire about internal audit,search,3,no,no
+bookkeeping,Accounting & Bookkeeping,accounting,"Maintenance of books of account, reconciliations and monthly MIS.","We maintain your books on Tally, Zoho Books or the software you already use, reconcile bank and ledger balances, and close the books each month.
+A short monthly summary helps owners see where the business stands without reading full financial statements.","Small and medium businesses
+Startups
+Professionals and clinics","Day-to-day bookkeeping
+Bank and ledger reconciliations
+Month-end closing
+MIS reports
+Finalisation of accounts","Updated books of account
+Monthly MIS summary
+Year-end financial statements",Enquire about bookkeeping,book-open,1,yes,yes
+payroll,Payroll Compliance,accounting,"Salary processing support with PF, ESI, professional tax and TDS.",We help employers process payroll and meet related statutory obligations each month.,Employers with salaried staff,"Salary computation
+PF / ESI / PT returns
+TDS on salary
+Form 16","Monthly payroll register
+Filed statutory returns",Enquire about payroll,users,2,no,yes
+company-incorporation,Company & LLP Incorporation,corporate,"Choosing the right structure and registering a company, LLP or firm.","We help you choose between a private limited company, LLP, partnership or proprietorship based on liability, compliance and tax considerations, then complete the registration.","Founders and new ventures
+Existing businesses converting their structure","Structure advice
+Name reservation
+Incorporation filings (SPICe+ / FiLLiP)
+PAN, TAN and bank account support
+Post-incorporation compliance checklist","Certificate of incorporation
+Compliance calendar for the first year",Enquire about incorporation,building,1,yes,yes
+roc-compliance,ROC Annual Compliance,corporate,"Annual returns, financial statement filings and event-based ROC filings.",We manage annual filings with the Registrar of Companies and event-based filings such as director changes or changes in capital.,"Private limited companies
+LLPs","AOC-4 and MGT-7 / 7A
+LLP Form 8 and Form 11
+DIR-3 KYC
+Event-based filings","Filed forms and acknowledgements
+Updated statutory registers",Enquire about ROC compliance,landmark,2,no,yes
+business-advisory,Business Advisory,advisory,"Financial projections, project reports and guidance on business decisions.","We prepare projections and project reports for bank finance, and help owners think through financial decisions such as pricing, cash flow and expansion.","Businesses seeking bank finance
+Owners planning expansion","Projected financial statements
+CMA data and project reports
+Cash-flow planning
+Working capital review","Project report / CMA data
+Written recommendations",Discuss your business,chart,1,no,yes

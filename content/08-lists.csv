@@ -1,0 +1,27 @@
+﻿List,Year (milestones only),Title,Description,Icon
+Areas of specialisation,,Direct taxation,"Income tax planning, returns, notices and assessments for individuals and businesses.",receipt
+Areas of specialisation,,GST compliance,"Registration, periodic returns, reconciliations and departmental correspondence.",percent
+Areas of specialisation,,Audit & assurance,"Statutory, tax and internal audits with practical, well-documented findings.",shield-check
+Areas of specialisation,,Company & LLP law,"Incorporation, annual filings and routine corporate compliance.",landmark
+Firm values,,Integrity,"Advice that follows the law and professional standards, explained plainly.",scale
+Firm values,,Confidentiality,Client information is handled on a need-to-know basis and kept secure.,lock
+Firm values,,Diligence,"Work is reviewed before it is filed. Deadlines are tracked, not remembered.",clipboard-check
+Firm values,,Clarity,"Fees, scope and timelines agreed up front, in writing.",eye
+Firm milestones,2016,Practice established,{firm} begins practice in {city}. [SAMPLE],
+Firm milestones,2019,Audit & assurance practice,Statutory and tax audit work expands with a dedicated team. [SAMPLE],
+Firm milestones,2023,Current office,Practice moves to its present office. [SAMPLE],
+Client segments,,Salaried individuals,"Returns, regime choice and notices.",user
+Client segments,,Professionals,"Doctors, consultants and freelancers.",briefcase
+Client segments,,Startups,"Incorporation, compliance and first-year set-up.",rocket
+Client segments,,SMEs & traders,"GST, books, audit and payroll.",store
+Client segments,,Manufacturers,"Audit, GST and costing support.",factory
+Client segments,,NRIs,"Indian income, property sales and repatriation.",globe
+Client segments,,Trusts & NGOs,Audits and registrations.,heart
+How we work (steps),,Initial conversation,A short call or meeting to understand what you need and what documents exist.,
+How we work (steps),,Scope & engagement,"A written engagement letter setting out the scope, timeline and fee.",
+How we work (steps),,Work & review,"We prepare the work, review it internally, and walk you through it before filing.",
+How we work (steps),,Filing & follow-up,"We file, share acknowledgements, and track any follow-up from the authorities.",
+What clients can expect,,Direct access to the CA,"You work with the Chartered Accountant responsible for your engagement, not a call centre.",user
+What clients can expect,,Written scope and fees,Engagement letters set out what is included before work begins.,file-text
+What clients can expect,,A compliance calendar,"Due dates are tracked for you, with reminders before documents are needed.",calendar
+What clients can expect,,Confidential handling,Documents are shared through secure channels and accessed only by the team on your file.,lock

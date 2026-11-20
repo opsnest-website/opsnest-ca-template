@@ -45,12 +45,12 @@ export const siteData = {
   website: {
     // Public origin of the site, no trailing slash. Used for canonical URLs,
     // Open Graph tags, structured data and sitemap.xml.
-    siteUrl: "https://example.com",
+    siteUrl: "https://opsnest-website.github.io",
 
     // Folder the site is served from. "/ca/" for https://example.com/ca/,
     // or "/" when served at the domain root. Must start and end with "/".
     // This is the ONLY place the deployment path is configured.
-    basePath: "/ca/",
+    basePath: "/opsnest-ca-template/",
 
     language: "en-IN",
     locale: "en_IN",

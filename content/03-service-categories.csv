@@ -1,0 +1,7 @@
+﻿Category ID,Category name,Description,Icon,Display order (number)
+taxation,Taxation & Compliance,"Income tax returns, planning, notices and TDS.",receipt,1
+gst,GST Services,"Registration, returns, reconciliation and advisory.",percent,2
+audit,Audit & Assurance,"Statutory, tax and internal audits.",shield-check,3
+accounting,Accounting & Bookkeeping,"Books of account, MIS and payroll support.",book-open,4
+corporate,Company & LLP Services,Incorporation and ongoing ROC compliance.,landmark,5
+advisory,Business Advisory,"Structuring, projections and financial guidance.",chart,6

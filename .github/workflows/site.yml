@@ -11,6 +11,11 @@
 # See scripts/check-release.mjs for the full list.
 #
 # One-time setup: Settings → Pages → Build and deployment → Source: "GitHub Actions".
+#
+# PREVIEW DEPLOYS: while the repository variable PREVIEW_DEPLOY is "true"
+# (Settings → Secrets and variables → Actions → Variables), the release gate is
+# advisory, so the sample/draft site deploys with its "sample content" ribbon.
+# Delete the variable (or set it to anything else) to restore the blocking gate.
 
 name: Site
 
@@ -97,10 +102,17 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Release check (blocking)
+      - name: Release check (blocking unless PREVIEW_DEPLOY is "true")
         env:
           EXPECTED_BASE_URL: ${{ steps.pages.outputs.base_url }}
-        run: node scripts/check-release.mjs
+          PREVIEW_DEPLOY: ${{ vars.PREVIEW_DEPLOY }}
+        run: |
+          if [ "$PREVIEW_DEPLOY" = "true" ]; then
+            echo "::warning::PREVIEW_DEPLOY is on: deploying a draft/preview build. The release gate is advisory."
+            node scripts/check-release.mjs --advisory
+          else
+            node scripts/check-release.mjs
+          fi
 
   deploy:
     name: Deploy to GitHub Pages

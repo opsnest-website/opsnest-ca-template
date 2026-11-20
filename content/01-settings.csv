@@ -1,0 +1,187 @@
+﻿Section,Setting,Value,Help,key (do not edit),type (do not edit)
+1. Website,Draft mode (sample banner),yes,Must be 'no' before the site can go live,website.draftMode,bool
+1. Website,Website domain,https://opsnest-website.github.io,e.g. https://yourdomain.com (no trailing /),website.siteUrl,text
+1. Website,Folder on the domain,/opsnest-ca-template/,"/ca/ for yourdomain.com/ca/, or / for the root",website.basePath,text
+1. Website,Show entry disclaimer pop-up,yes,yes / no,website.entryDisclaimer.enabled,bool
+1. Website,Entry disclaimer text,"The rules of the Institute of Chartered Accountants of India (ICAI) restrict Chartered Accountants from soliciting work or advertising their services.
+By clicking “I agree”, you acknowledge that you are seeking information about this practice of your own accord, that there has been no solicitation or inducement of any kind, and that information on this website is not professional advice.",One paragraph per line,website.entryDisclaimer.paragraphs,lines
+2. CA profile,Prefix before name,CA,Usually CA,profile.prefix,text
+2. CA profile,Full name,Aarav Mehta,Without the CA prefix,profile.name,text
+2. CA profile,Designation,Chartered Accountant,,profile.designation,text
+2. CA profile,Role at the firm,Founder & Principal,e.g. Founder & Principal,profile.roleAtFirm,text
+2. CA profile,Photo file,assets/images/profile-placeholder.svg,"Put the photo in assets/images/ and write its path, e.g. assets/images/ca-photo.jpg",profile.photograph.src,text
+2. CA profile,Introduction (homepage),"I advise individuals, professionals and owner-managed businesses on income tax, GST and statutory compliance, with an emphasis on clear explanations and dependable timelines.",One or two sentences,profile.introduction,text
+2. CA profile,Biography,"{caName} qualified as a Chartered Accountant and began in audit and direct tax practice, working with manufacturing, trading and services businesses. [SAMPLE: replace with the CA's actual background.]
+{caName} founded {firm} to offer a practice where clients deal directly with a qualified professional, receive straightforward advice, and know what is due, when, and why.",One paragraph per line,profile.biography,lines
+2. CA profile,Experience summary,"Experience across statutory and tax audits, direct and indirect tax compliance, and company law matters for SMEs, startups and individual taxpayers. [SAMPLE]",One or two sentences,profile.experienceSummary,text
+2. CA profile,In practice since (year),2015,Leave empty to hide,profile.practiceSince,text
+2. CA profile,Practice year verified,no,yes / no,profile.practiceSinceVerified,bool
+2. CA profile,Show ICAI membership,yes,yes / no,profile.membership.show,bool
+2. CA profile,ICAI membership number,,Only if the CA wants it published,profile.membership.membershipNumber,text
+2. CA profile,Member since (year),,,profile.membership.memberSince,text
+2. CA profile,Membership details verified,no,yes / no,profile.membership.verified,bool
+2. CA profile,Personal quote / philosophy,Good advice should be clear enough that a client can explain it back to you.,,profile.philosophy.quote,text
+2. CA profile,Approach paragraph(s),"Most compliance problems start as communication problems. I prefer to explain the reasoning behind a recommendation, agree timelines in writing, and flag issues early rather than late.",One paragraph per line,profile.philosophy.paragraphs,lines
+2. CA profile,Show achievements section,no,Keep 'no' unless approved (see 12-achievements.csv),profile.achievements.enabled,bool
+3. Firm,Firm name (short),Artha & Co.,e.g. Mehta & Co.,firm.name,text
+3. Firm,Firm name (full),"Artha & Co., Chartered Accountants","e.g. Mehta & Co., Chartered Accountants",firm.legalName,text
+3. Firm,Tagline under the logo,Chartered Accountants,,firm.tagline,text
+3. Firm,Logo file,assets/images/logo.svg,e.g. assets/images/logo.svg,firm.logo.src,text
+3. Firm,Year established,2016,Leave empty to hide,firm.established,text
+3. Firm,Type of firm,Proprietorship firm,e.g. Partnership firm,firm.constitution,text
+3. Firm,ICAI Firm Registration No. (FRN),,Only if the CA wants it published,firm.registration.value,text
+3. Firm,FRN verified,no,yes / no,firm.registration.verified,bool
+3. Firm,Firm introduction,"{firm} is a Chartered Accountancy practice based in {city}. We work with individuals, professionals and owner-managed businesses on tax, audit, accounting and corporate compliance.",Two or three sentences,firm.introduction,text
+3. Firm,Firm background,"The practice was set up to give clients direct access to a qualified Chartered Accountant, supported by a small team that handles day-to-day compliance with care and consistency. [SAMPLE]
+Our work is organised around a compliance calendar for each client, so that filings, payments and reviews happen on time and without last-minute surprises.",One paragraph per line,firm.background,lines
+3. Firm,Mission,"To help clients meet their tax and regulatory obligations accurately and on time, with advice they understand.",,firm.mission,text
+3. Firm,Vision,"To be a practice clients trust with their financial compliance year after year, because the work is careful and the communication is clear.",,firm.vision,text
+3. Firm,How engagements are run,"Every engagement starts with understanding the client's position and documents, then agreeing a written scope and fee. Routine compliance is scheduled on a shared calendar; advisory work is delivered with a short written summary of recommendations and next steps.",One paragraph per line,firm.approach,lines
+3. Firm,Locations served,"Pune
+Pimpri-Chinchwad
+Mumbai
+Remote engagements across India",One per line,firm.locationsServed,lines
+3. Firm,Show team section,yes,yes / no (team members are in 05-team.csv),firm.team.enabled,bool
+4. Contact,Main phone number,91 98765 43210,"With country code, e.g. 91 98765 43210 (the + is added automatically)",contact.phonePrimary,text
+4. Contact,Office / second phone,91 20 1234 5678,Leave empty to hide,contact.phoneSecondary,text
+4. Contact,WhatsApp number,91 98765 43210,Leave empty to hide WhatsApp buttons,contact.whatsapp,text
+4. Contact,WhatsApp first message,"Hello, I would like to make an enquiry.",,contact.whatsappGreeting,text
+4. Contact,Main email,contact@example.com,,contact.emailPrimary,text
+4. Contact,Second email,,Leave empty to hide,contact.emailSecondary,text
+4. Contact,Address line 1,"Office No. [X], [Building name]",,contact.address.line1,text
+4. Contact,Address line 2,[Road / Area],,contact.address.line2,text
+4. Contact,City,Pune,,contact.address.city,text
+4. Contact,State,Maharashtra,,contact.address.state,text
+4. Contact,PIN code,411001,,contact.address.postalCode,text
+4. Contact,Country,India,,contact.address.country,text
+4. Contact,Landmark,,Optional,contact.address.landmark,text
+4. Contact,Google Maps link,https://www.google.com/maps/search/?api=1&query=Pune%2C+Maharashtra,Google Maps → Share → Copy link,contact.mapsUrl,text
+4. Contact,Google Maps embed link,,"Optional: Maps → Share → Embed a map → copy the src=""…"" link",contact.mapsEmbedUrl,text
+4. Contact,Note under office hours,"Office visits by prior appointment, please.",,contact.hoursNote,text
+4. Contact,Online booking link,,Optional (Calendly etc.),contact.appointmentUrl,text
+5. Enquiry form,Form service address,,From Formspree etc. Leave empty to use WhatsApp/email only,enquiryForm.endpoint,text
+5. Enquiry form,Form service name,,e.g. Formspree,enquiryForm.providerName,text
+5. Enquiry form,Form service privacy policy link,,,enquiryForm.providerPrivacyUrl,text
+5. Enquiry form,Message after sending,Thank you. Your enquiry has been sent. We usually reply within one working day.,,enquiryForm.successMessage,text
+6. Optional sections,Show testimonials,no,Keep 'no' unless the CA confirms it is permitted,testimonials.enabled,bool
+6. Optional sections,Google business data (JSON-LD),no,yes / no,seo.structuredData.enabled,bool
+7. Google / SEO,Title pattern,%s · {firmLegal},%s is replaced by the page name,seo.titleTemplate,text
+7. Google / SEO,Default description,"{firm} is a Chartered Accountancy practice in {city} offering income tax, GST, audit, accounting and company law services to individuals and businesses.",,seo.defaultDescription,text
+7. Google / SEO,Keywords,"chartered accountant Pune
+CA firm Pune
+income tax return filing
+GST registration and returns
+statutory audit
+company incorporation
+LLP compliance",One per line,seo.keywords,lines
+8. Homepage text,Small line above headline,{designation} · {city},,pages.home.hero.eyebrow,text
+8. Homepage text,Main headline,"Careful advice on tax, audit and compliance.","Short, under 8 words",pages.home.hero.headline,text
+8. Homepage text,Text under headline,,Leave empty to use the CA introduction,pages.home.hero.lead,text
+9. Legal,Privacy policy last updated,2026-11-12,"Date, e.g. 2026-11-12",privacy.lastUpdated,text
+9. Legal,Disclaimer last updated,2026-11-12,Date,disclaimer.lastUpdated,text
+10. Footer,Footer description,"A Chartered Accountancy practice in {city} for tax, audit, accounting and corporate compliance.",,footer.blurb,text
+10. Footer,Copyright line,© {year} {firmLegal}. All rights reserved.,{year} and {firmLegal} are filled in automatically,footer.copyright,text
+10. Footer,Footer note,Information on this website is general in nature and is not professional advice.,,footer.note,text
+12. Advanced: website,language,en-IN,,website.language,text
+12. Advanced: website,locale,en_IN,,website.locale,text
+12. Advanced: website,themeColor,#0d1b2e,,website.themeColor,text
+12. Advanced: website,favicon,assets/icons/favicon.svg,,website.favicon,text
+12. Advanced: website,ogImage,assets/images/og-image.png,,website.ogImage,text
+12. Advanced: website,draftNotice,"Preview build: names, numbers and professional details on this site are sample content pending review by the Chartered Accountant.",,website.draftNotice,text
+12. Advanced: website,entryDisclaimer › title,Disclaimer,,website.entryDisclaimer.title,text
+12. Advanced: website,entryDisclaimer › acceptLabel,I agree,,website.entryDisclaimer.acceptLabel,text
+12. Advanced: website,entryDisclaimer › declineLabel,Leave site,,website.entryDisclaimer.declineLabel,text
+12. Advanced: website,entryDisclaimer › declineUrl,https://www.google.com/,,website.entryDisclaimer.declineUrl,text
+12. Advanced: website,entryDisclaimer › rememberDays,30,(number),website.entryDisclaimer.rememberDays,number
+12. Advanced: seo,structuredData › type,AccountingService,,seo.structuredData.type,text
+12. Advanced: profile,photograph › alt,Portrait of {ca},,profile.photograph.alt,text
+12. Advanced: profile,photograph › width,800,(number),profile.photograph.width,number
+12. Advanced: profile,photograph › height,1000,(number),profile.photograph.height,number
+12. Advanced: profile,membership › body,The Institute of Chartered Accountants of India,,profile.membership.body,text
+12. Advanced: firm,logo › alt,{firm} logo,,firm.logo.alt,text
+12. Advanced: firm,registration › label,ICAI Firm Registration No.,,firm.registration.label,text
+12. Advanced: enquiryForm,format,json,,enquiryForm.format,text
+12. Advanced: enquiryForm,honeypotField,_gotcha,,enquiryForm.honeypotField,text
+12. Advanced: enquiryForm,extraFields › _subject,New website enquiry,,enquiryForm.extraFields._subject,text
+12. Advanced: enquiryForm,errorMessage,"Sorry, your enquiry could not be sent. Please try again, or contact us by phone, WhatsApp or email.",,enquiryForm.errorMessage,text
+12. Advanced: enquiryForm,notConnectedMessage,Online form submission is not set up on this website yet. Your details won't be sent from here. Use the buttons below to send the same message by WhatsApp or email instead.,,enquiryForm.notConnectedMessage,text
+12. Advanced: enquiryForm,consentText,"I agree that the details I have entered may be used to respond to my enquiry, as described in the",,enquiryForm.consentText,text
+11. Page text: home,hero › primaryCta › label,Contact us,,pages.home.hero.primaryCta.label,text
+11. Page text: home,hero › primaryCta › href,contact.html,,pages.home.hero.primaryCta.href,text
+11. Page text: home,hero › secondaryCta › label,Explore services,,pages.home.hero.secondaryCta.label,text
+11. Page text: home,hero › secondaryCta › href,services.html,,pages.home.hero.secondaryCta.href,text
+11. Page text: home,firmIntro › enabled,yes,(yes/no),pages.home.firmIntro.enabled,bool
+11. Page text: home,firmIntro › eyebrow,The practice,,pages.home.firmIntro.eyebrow,text
+11. Page text: home,firmIntro › title,"A small practice, run with discipline.",,pages.home.firmIntro.title,text
+11. Page text: home,services › enabled,yes,(yes/no),pages.home.services.enabled,bool
+11. Page text: home,services › eyebrow,Services,,pages.home.services.eyebrow,text
+11. Page text: home,services › title,What we help with,,pages.home.services.title,text
+11. Page text: home,services › intro,Core areas of practice. Each links to the scope of work and what you receive.,,pages.home.services.intro,text
+11. Page text: home,services › linkLabel,View all services,,pages.home.services.linkLabel,text
+11. Page text: home,segments › enabled,yes,(yes/no),pages.home.segments.enabled,bool
+11. Page text: home,segments › eyebrow,Who we serve,,pages.home.segments.eyebrow,text
+11. Page text: home,segments › title,Clients we work with,,pages.home.segments.title,text
+11. Page text: home,segments › intro,,,pages.home.segments.intro,text
+11. Page text: home,commitments › enabled,yes,(yes/no),pages.home.commitments.enabled,bool
+11. Page text: home,commitments › eyebrow,Working with us,,pages.home.commitments.eyebrow,text
+11. Page text: home,commitments › title,What you can expect,,pages.home.commitments.title,text
+11. Page text: home,commitments › intro,,,pages.home.commitments.intro,text
+11. Page text: home,profile › enabled,yes,(yes/no),pages.home.profile.enabled,bool
+11. Page text: home,profile › eyebrow,The Chartered Accountant,,pages.home.profile.eyebrow,text
+11. Page text: home,profile › title,,,pages.home.profile.title,text
+11. Page text: home,profile › linkLabel,Read full profile,,pages.home.profile.linkLabel,text
+11. Page text: home,process › enabled,yes,(yes/no),pages.home.process.enabled,bool
+11. Page text: home,process › eyebrow,How we work,,pages.home.process.eyebrow,text
+11. Page text: home,process › title,From first call to filing,,pages.home.process.title,text
+11. Page text: home,process › intro,,,pages.home.process.intro,text
+11. Page text: home,testimonials › enabled,yes,(yes/no),pages.home.testimonials.enabled,bool
+11. Page text: home,testimonials › eyebrow,Client feedback,,pages.home.testimonials.eyebrow,text
+11. Page text: home,testimonials › title,In clients' words,,pages.home.testimonials.title,text
+11. Page text: home,contact › enabled,yes,(yes/no),pages.home.contact.enabled,bool
+11. Page text: home,contact › eyebrow,Get in touch,,pages.home.contact.eyebrow,text
+11. Page text: home,contact › title,Discuss your requirement,,pages.home.contact.title,text
+11. Page text: home,contact › intro,"Call, send a WhatsApp message or email. We'll respond within one working day.",,pages.home.contact.intro,text
+11. Page text: about,eyebrow,About the CA,,pages.about.eyebrow,text
+11. Page text: about,bioTitle,Profile,,pages.about.bioTitle,text
+11. Page text: about,qualificationsTitle,Qualifications & membership,,pages.about.qualificationsTitle,text
+11. Page text: about,journeyTitle,Career,,pages.about.journeyTitle,text
+11. Page text: about,specializationsTitle,Areas of practice,,pages.about.specializationsTitle,text
+11. Page text: about,achievementsTitle,Professional recognition,,pages.about.achievementsTitle,text
+11. Page text: about,philosophyTitle,Approach,,pages.about.philosophyTitle,text
+11. Page text: about,ctaTitle,Speak with the CA directly,,pages.about.ctaTitle,text
+11. Page text: about,ctaText,"For an initial conversation about your requirement, call or message the office.",,pages.about.ctaText,text
+11. Page text: firm,eyebrow,Our firm,,pages.firm.eyebrow,text
+11. Page text: firm,backgroundTitle,Background,,pages.firm.backgroundTitle,text
+11. Page text: firm,historyTitle,Milestones,,pages.firm.historyTitle,text
+11. Page text: firm,missionTitle,Mission,,pages.firm.missionTitle,text
+11. Page text: firm,visionTitle,Vision,,pages.firm.visionTitle,text
+11. Page text: firm,valuesTitle,Values,,pages.firm.valuesTitle,text
+11. Page text: firm,approachTitle,How engagements are run,,pages.firm.approachTitle,text
+11. Page text: firm,teamTitle,Team,,pages.firm.teamTitle,text
+11. Page text: firm,segmentsTitle,Clients we serve,,pages.firm.segmentsTitle,text
+11. Page text: firm,presenceTitle,Where we work,,pages.firm.presenceTitle,text
+11. Page text: firm,credentialsTitle,Registrations,,pages.firm.credentialsTitle,text
+11. Page text: firm,photosTitle,Our office,,pages.firm.photosTitle,text
+11. Page text: services,eyebrow,Services,,pages.services.eyebrow,text
+11. Page text: services,title,Areas of practice,,pages.services.title,text
+11. Page text: services,intro,"Choose a category, or open any service to see the scope of work, who it's for and what you receive.",,pages.services.intro,text
+11. Page text: services,allLabel,All services,,pages.services.allLabel,text
+11. Page text: services,faqTitle,Common questions,,pages.services.faqTitle,text
+11. Page text: service,audienceTitle,Who this is for,,pages.service.audienceTitle,text
+11. Page text: service,scopeTitle,Scope of work,,pages.service.scopeTitle,text
+11. Page text: service,deliverablesTitle,What you receive,,pages.service.deliverablesTitle,text
+11. Page text: service,relatedTitle,Related services,,pages.service.relatedTitle,text
+11. Page text: service,asideTitle,Enquire about this service,,pages.service.asideTitle,text
+11. Page text: service,asideText,Share a few details and we'll come back to you within one working day.,,pages.service.asideText,text
+11. Page text: service,notFoundTitle,Service not found,,pages.service.notFoundTitle,text
+11. Page text: service,notFoundText,This service may have been renamed or is no longer offered.,,pages.service.notFoundText,text
+11. Page text: contact,eyebrow,Contact,,pages.contact.eyebrow,text
+11. Page text: contact,title,Get in touch,,pages.contact.title,text
+11. Page text: contact,intro,"Choose whichever is most convenient. For document-heavy matters, email is usually best.",,pages.contact.intro,text
+11. Page text: contact,formTitle,Send an enquiry,,pages.contact.formTitle,text
+11. Page text: contact,formIntro,"Tell us briefly what you need. Please don't include PAN, Aadhaar or bank details here.",,pages.contact.formIntro,text
+11. Page text: contact,hoursTitle,Office hours,,pages.contact.hoursTitle,text
+11. Page text: contact,mapTitle,Location,,pages.contact.mapTitle,text
+11. Page text: contact,faqTitle,Before you get in touch,,pages.contact.faqTitle,text
+12. Advanced: privacy,intro,"This policy explains what information this website collects, why, and how it is handled. It applies only to this website.",,privacy.intro,text
+12. Advanced: privacy,contactHeading,Privacy enquiries,,privacy.contactHeading,text

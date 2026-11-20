@@ -228,7 +228,7 @@ async function suiteMutated(browser) {
       ),
   );
 
-  const { server, base } = await serve(tmp, "/ca/");
+  const { server, base } = await serve(tmp, CFG.site.website.basePath || "/");
   const page = await newPage(browser);
 
   section("Adding a service needs no UI changes");
